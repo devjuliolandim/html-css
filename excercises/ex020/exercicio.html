@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links Personalizados</title>
+
+    <style>
+
+
+        /*
+        
+        id              = #
+        class           = .
+        pseudo-classe   = :
+        pseudo-elemento = ::
+        
+        
+        */
+
+
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-image: linear-gradient(to right, rgb(233, 232, 232), rgb(161, 160, 160));
+        }
+
+        main{
+            background-color: white;
+            width: 400px;
+            border-radius: 20px;
+            margin: auto;
+            padding: 10px;
+            box-shadow: 5px 5px 5px rgb(115, 115, 115);
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        li{
+            padding: 5px;
+        }
+
+        a{
+            text-decoration: none;
+            text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.433);
+        }
+        
+        a:hover{
+            color: rgb(51, 0, 255);
+            text-decoration: underline;
+        }
+
+        .especial::before{
+            content: '↣ ';
+        }
+
+        .especial::after{
+            content: ' ↢';
+        }
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Personalizando Links</h1>
+        <ul>
+            <li class = "especial"><a href="#">Canal Do Youtube</a></li>
+            <li id = "irrelevante"><a href="#">GitHub</a></li>
+            <li class = "especial"><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li class = "especial"><a href="#">Facebook</a></li>
+        </ul>
+    </main>
+</body>
+</html>

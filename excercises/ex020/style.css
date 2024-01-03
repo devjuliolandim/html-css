@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+
+div{
+    display: inline-block;
+    background-color: lightblue;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2em;
+}
+
+div:hover{
+    background-color: blue;
+}
+
+div > p{
+    display: none;
+}
+
+div:hover > p{
+    display: block;
+}

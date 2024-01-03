@@ -1,0 +1,159 @@
+@charset "UTF-8";
+
+@font-face{
+    font-family: 'Android';
+    src: url('fontes/idroid.otf') format('opentype');
+}
+
+header#principal{
+    background-image: linear-gradient(to bottom, #3CD882,#1A5C38);
+
+    width: 100%;
+    height: 260px;
+
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.481);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #84E1AD;
+}
+
+h1#nome-do-site{
+    margin: 0;
+    color: white;
+    text-align: center;
+    padding-top: 60px;
+    text-shadow: 2px 2px 3px #00000040;
+}
+
+p#slogan{
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+    margin-bottom: 70px;
+    text-shadow: 2px 2px 3px #00000040;
+}
+
+nav > a{
+   text-decoration: none;
+   color: white;
+   margin: 10px;
+   text-shadow: 2px 2px 3px #00000040;
+}
+
+a:hover{
+text-decoration: underline;
+}
+
+main{
+    background-color: white;
+    margin: auto;
+    margin-bottom: 0px;
+    width: 70%;
+    height: 100%;
+    box-shadow: 0px 2px 17px 0px rgba(0, 0, 0, 0.396);
+
+
+    border-radius: 0px 0px 10px 10px;
+}
+
+h2{
+    margin-top: 0px;
+    margin-left: 20px;
+    padding-top: 10px;
+    font-size: 2em;
+    color: #055e2c;
+    font-family: 'Android', sans-serif;
+
+}
+
+p{
+    text-align: justify;
+    font-size: 1em;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 0px;
+    text-indent: 20px;
+}
+
+h3{
+    margin-left: 20px;
+    padding-left: 10px;
+    color: #195935;
+    background-image: linear-gradient(to right,#d5f2e1, white );
+    font-family: 'Android', sans-serif;
+
+}
+
+a{
+    text-decoration: none;
+    color: #055e2c;
+    font-weight: bold;
+}
+
+a.links::after{
+    content: "🔗";
+}
+
+.container{
+    text-align: center;
+}
+
+.fundo{
+    margin: auto;
+    width: 100%;
+    height: 500px;
+    background-color: #055e2c;
+}
+
+iframe{
+   padding-top: 100px;
+   padding-left: 250px;
+}
+
+div#aprender{
+    margin: 20px auto 20px auto;
+    width: 80%;
+    height: 500px;
+    box-shadow: -2px 3px 10px rgba(0, 0, 0, 0.347);
+    border-radius: 10px;
+}
+
+header#aprender-header{
+    width: 100%;
+    height: 10%;
+    background-color: #2FA866;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#aprender-p{
+    color: white;
+    padding-top: 15px;
+}
+
+
+#aprender-div-textos{
+    width: 100%;
+    height: 90%;
+    background-color: #C5EBD6;
+    border-radius: 0px 0px 10px 10px;
+}
+
+
+footer{
+    padding: 15px;
+    background-color: #055e2c;
+}
+
+#footer{
+    color: white;
+    margin: auto;
+    text-align: center;
+}
+
+.p-final{
+    padding-top: 10px;
+}

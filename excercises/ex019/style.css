@@ -1,0 +1,43 @@
+body{
+    background-image: linear-gradient(to right, #DB1F01, #B81800);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+main{
+    background-color: rgba(255, 255, 255, 0.915);
+    padding: 20px;
+    width: 600px;
+    border-radius: 20px;
+    margin: auto;
+}
+
+
+h1#principal{
+    text-align: center;
+    background-color: #660E00;
+    color: white;
+}
+
+h1{
+    color: #660E00;
+}
+h2{
+    font-style: italic;
+}
+
+.basico{
+    color:rgb(24, 179, 0);
+}
+
+.intermediario{
+    color:rgb(179, 179, 0);
+}
+
+.avancado{
+    color:rgb(179, 0, 0);
+}
+
+.destaque{
+    background-color: pink;
+    font-weight: bold;
+}

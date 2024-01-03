@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+body{
+    font-family: sans-serif;
+    background-image: linear-gradient(to right, lightblue, rgb(134, 166, 177));
+}
+
+main{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgb(102, 127, 136);
+    margin: auto;
+
+}
+
+p{
+    text-align: justify;
+    margin: 10px;
+}
+
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
