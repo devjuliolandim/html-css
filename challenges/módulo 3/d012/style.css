@@ -6,6 +6,7 @@
 
 *{
     margin: 0px;
+    padding: 0px;
 }
 
 :root{
@@ -16,8 +17,9 @@
    --fonte-alternativa: 'Sriracha', cursive;
 }
 
-body{
+html,body{
     font-family: var(--fonte-alternativa);
+    min-height: 100%vh;
 }
 
 a{
@@ -30,10 +32,6 @@ a:hover{
     background-color: gray;
     border-radius: 10px;
     transition-duration: 0.3s;
-}
-
-p{
-    line-height: 1.6;
 }
 
 header{
@@ -54,56 +52,33 @@ header > p{
     font-size: 1.1em;
 }
 
-header > p > a {
-    text-decoration: none;
-}
-
 section{
-    padding: 10px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 1.6;
 }
 
 section > p {
-line-height: 2;
-font-size: 3.5vw;
-padding: 15px;
-padding-bottom: 50px;
-font-style: normal;
-}
+    line-height: 2;
+    font-size: 3.5vw;
+    padding: 15px;
+    padding-bottom: 50px;
+    font-style: normal;
+    }
 
-#girassol{
-    background: transparent url("imagens/background001.jpg") center center no-repeat fixed;
-
-    background-size: cover;
-}
-
-#girassol > p{
-    background-color: rgba(0, 0, 0, 0.364);
+.normal{}
+.imagem{
+    background-color: rgb(55, 55, 55);
     color: white;
+}
 
+.imagem > p {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.138);
     border-radius: 20px;
-
-    max-width: 660px;
-
-    padding-bottom: 15px;
 }
 
-#folha{
-    background: transparent url("imagens/background002.jpg") center center no-repeat fixed;
-
-    background-size: cover;
-
-}
-
-#folha > p{
-    background-color: rgba(0, 0, 0, 0.364);
-    color: white;
-
-    border-radius: 20px;
-
-    max-width: 660px;
-
-    padding-bottom: 15px;
-}
 
 
 footer{
