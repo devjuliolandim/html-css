@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
 *{
     margin: 0px;
 }
@@ -10,10 +12,12 @@
    --fonte-texto:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
 
    --fonte-titulo: 'Passion One', sans-serif;
+
+   --fonte-alternativa: 'Sriracha', cursive;
 }
 
 body{
-    font-family: var(--fonte-texto);
+    font-family: var(--fonte-alternativa);
 }
 
 a{
@@ -54,8 +58,16 @@ header > p > a {
     text-decoration: none;
 }
 
+section{
+    padding: 10px;
+}
+
 section > p {
-line-height: 1.6;
+line-height: 2;
+font-size: 3.5vw;
+padding: 15px;
+padding-bottom: 50px;
+font-style: normal;
 }
 
 #girassol{
@@ -68,7 +80,11 @@ line-height: 1.6;
     background-color: rgba(0, 0, 0, 0.364);
     color: white;
 
-    width: 195px;
+    border-radius: 20px;
+
+    max-width: 660px;
+
+    padding-bottom: 15px;
 }
 
 #folha{
@@ -82,7 +98,11 @@ line-height: 1.6;
     background-color: rgba(0, 0, 0, 0.364);
     color: white;
 
-    width: 195px;
+    border-radius: 20px;
+
+    max-width: 660px;
+
+    padding-bottom: 15px;
 }
 
 
