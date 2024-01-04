@@ -67,16 +67,32 @@ section > p {
     font-style: normal;
     }
 
-.normal{}
-.imagem{
-    background-color: rgb(55, 55, 55);
-    color: white;
+.normal{
+    background-color: white;
+    color: black;
 }
+.imagem{
+    color: white;
+    box-shadow: inset 6px 6px 12px 0px rgba(0, 0, 0, 0.464);
+    background:black right center no-repeat fixed;
+    background-size: cover;
 
+}
 .imagem > p {
     display: inline-block;
-    background-color: rgba(0, 0, 0, 0.138);
+    background-color: rgba(0, 0, 0, 0.534);
     border-radius: 20px;
+    text-shadow: 2px 2px 0px black;
+}
+
+#img01{
+   background-image: url("imagens/background001.jpg");
+    
+}
+
+#img02{
+    background-image: url("imagens/background002.jpg");
+    
 }
 
 
