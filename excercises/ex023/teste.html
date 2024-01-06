@@ -1,59 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste 1</title>
-
+    <title>Treino Tabelas</title>
 
     <style>
-        body{
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        :root{
+            --cor1: #5FB83D;
+            --cor2: #588546;
+            --cor3: #58EB1E;
+            --cor4: #42523C;
+            --cor5: #2E332C;
+
         }
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        header{
+            background-image: linear-gradient(to right, var(--cor3), var(--cor1));
+            padding: 4vh;
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.462);
+        }
+
+        main{
+            margin: 0 auto;
+            max-width: 600px;
+        }
+
 
         table{
             width: 400px;
-            border: 1px solid black;
             border-collapse: collapse;
         }
 
-        td{
+        td, th{
             border: 1px solid black;
             padding: 8px;
         }
 
-        td.elemento{
-            background-color: aqua;
+        th{
+            background-color: gray;
+            color: white;
         }
 
+        .num{
+            text-align: right;
+        }
 
     </style>
 </head>
 <body>
-    <h1>Teste</h1>
 
-    <table>
-        <tr class = "linha">
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-        </tr>
+    <header>
+        <h1>Treino de Tabelas</h1>
+    </header>
 
-        <tr>
-            <td>5</td>
-            <td>6</td>
-            <td class = "elemento">7</td>
+    <main>
+        <table>
+            <caption>População No Brasil</caption>
+            <thead>
+                <tr>
+                    <th scope = "col">Estado</th>
+                    <th scope = "col">População</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class = "num">45 789 123</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class = "num">25 619 123</td>
+                </tr>
+                <tr>
+                    <td>Ceará</td>
+                    <td class = "num">45 789 123</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class = "num">45 789 123</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope = "row">População Total</th>
+                    <td class = "num">123 456 789</td>
+                </tr>
+            </tfoot>
+        </table>
         
-        </tr>
-
-        <tr>
-            <td>9</td>
-            <td>10</td>
-            <td>11</td>
-        
-        </tr>
-
-    </table>
-    
+    </main>
 </body>
 </html>
