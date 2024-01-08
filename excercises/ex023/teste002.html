@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Um Novo Teste de Tabelas</title>
+
+
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        caption{
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 400px;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        .num{
+            text-align: right;
+        }
+
+        tbody > tr:nth-child(even){
+            background-color: lightcoral;
+        }
+
+
+        
+
+    </style>
+</head>
+<body>
+    <h1>Estou aprendendo tabelas!</h1>
+    <p>Basciamente, posso criar uma tabela usando a seguinte tag &lt;table&gt;</p>
+
+    <table>
+        <caption>Quantidade de Matérias de acordo com os semestres</caption>
+        <thead>
+            <tr>
+                <th scope="col">Semestre</th>
+                <th scope="col">Matérias</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1º</td>
+                <td class = "num">5</td>
+            </tr>
+
+            <tr>
+                <td>2º</td>
+                <td class = "num">7</td>
+            </tr>
+
+            <tr>
+                <td>3º</td>
+                <td class = "num">6</td>
+            </tr>
+
+            <tr>
+                <td>4º</td>
+                <td class = "num">6</td>
+            </tr>
+
+            <tr>
+                <td>5º</td>
+                <td class = "num">5</td>
+            </tr>
+        </tbody>
+        <tfoot>
+
+
+            <tr>
+
+                <th scope="row"> Total de Matérias</th>
+                <td class = "num">29</td>
+
+            </tr>
+        </tfoot>
+
+
+
+    </table>
+    
+</body>
+</html>
