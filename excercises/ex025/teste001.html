@@ -4,36 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
     <style>
-        #botao{
-            border-radius: 20px;
-            background-color: darkblue;
-            color: white;
+
+        *{
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-            transition: box-shadow 1s, padding-right 1s, border 1s;
-        }
-
-        #botao:hover{
-            border: 2px solid red;
-            padding-right: 20px;
-            box-shadow: 9px 9px 0px rgba(0, 0, 0, 0.451);
-            transition: 1s;
         }
 
     </style>
 </head>
 <body>
-    <h1>Outro Form</h1>
-    <form action="cadastro.php" autocomplete="off">
+    <h1>Outro Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
         <p>
-            <label for="iescola">Escola:</label> <input type="text" name="escola" id="iescola">
+            <label for="iescola">Usuário:</label> <input type="text" name="escola" id="iescola" required>
         </p>
+
         <p>
             <label for="iolhos">Cor dos Olhos:</label> <input type="text" name="Olhos" id="iolhos">
         </p>
-        <input type="submit" value="Enviar Infos" id = "botao">
+
+        <p>
+            <label for="isenha">Senha: </label><input type="password" name="senha" id="isenha" required autocomplete="current-password">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar Infos" id = "botao">
+            <input type="reset" value="Limpar Infos">
+        </p>
     </form>
     
 </body>
