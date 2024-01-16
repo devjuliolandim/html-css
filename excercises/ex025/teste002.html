@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Formulários</title>
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+<body>
+
+    <h1>Teste de Formulários</h1>
+    
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <fieldset>
+            <legend>Insira seus dados, por gentileza</legend>
+
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="Nome" id="inome" required>
+            </p>
+
+            <p>
+                <label for="iemail">E-Mail: </label>
+                <input type="email" name="email" id="iemail" required>
+            </p>
+
+            <p>
+                <label for="isenha">Senha: </label>
+                <input type="password" name="senha" id="isenha" required>
+            </p>
+
+
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Suas notas</legend>
+            <p>
+                <label for="imedia">Média: </label>
+                <input type="number" name="media" id="imedia" min="0" max = "10" step="0.1">
+            </p>
+
+
+            <p>
+                <label for="ihora">Hora da Prova: </label>
+                <input type="time" name="Hora" id="ihora">
+
+            </p>
+
+            <p>
+                <label for="imonth">Período Letivo: </label>
+                <input type="month" name="month" id="imonth">
+
+            </p>
+
+            <p>
+                <label for="idata">Data da Prova: </label>
+                <input type="date" name="data" id="idata">
+            </p>
+
+
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Localização e Esporte favorito</legend>
+
+            <p>
+                <label for="local">Seu Estado: </label>
+                <select name="local" id="local">
+
+                    <option value="" selected>---Escolha---</option>
+                    
+                    <optgroup label="Região Sudeste">
+                         <option value="MG">Minas Gerais</option>
+                         <option value="SP">São Paulo</option>
+                         <option value="RJ">Rio de Janeiro</option>
+                     </optgroup>
+
+
+                     <optgroup label="Região Nordeste">
+                        <option value="CE">Ceará</option>
+                        
+                     </optgroup>
+
+                </select>
+
+            </p>
+
+
+            <p>
+                Esportes:
+
+                <br>
+
+                <input type="checkbox" name="Futebol" id="iFutebol">
+                <label for="iFutebol">Futebol</label>
+                
+                <br>
+
+                <input type="checkbox" name="Basquete" id="iBasquete">
+                <label for="iBasquete">Basquete</label>
+
+            </p>
+
+
+        </fieldset>
+
+
+
+        <p>
+            <input type="submit" value="Enviar Dados">
+            <input type="reset" value="Limpar Dados">
+        </p>
+
+    </form>
+
+</body>
+</html>
