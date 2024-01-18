@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media-Query</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/media-query.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
+<body onresize="resizeScreen()">
 
     <header>
         <h1>Meu Site</h1>
-        <i id = "burger" class="material-icons">menu</i>
-        <menu>
+        <i id = "burger" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id = "menu">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -30,7 +31,35 @@
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, esse nostrum velit magnam culpa blanditiis maiores. Itaque magnam officiis omnis, suscipit, fugit sequi in dolore, cumque quas at dicta quaerat!</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, totam tenetur iure obcaecati deleniti reprehenderit placeat consequatur voluptates ea magni ducimus ex voluptatum dolor ad consectetur porro! Maxime, mollitia perferendis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic aliquam delectus vitae enim aperiam consequuntur blanditiis, voluptatem ea sunt sint corrupti veritatis suscipit, necessitatibus sed possimus. Distinctio dolorem facere eveniet.</p>
         </article>
+
+        <article>
+            <h2>Lorem ipsum</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis labore optio corrupti. Molestias delectus voluptas dignissimos placeat debitis necessitatibus, temporibus possimus dolores perspiciatis harum accusamus iste, magnam, unde sed nam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi praesentium, hic molestiae fuga eveniet qui odio esse omnis inventore perspiciatis, reprehenderit voluptas similique deserunt, reiciendis consequatur repudiandae voluptatibus assumenda modi.</p>
+        </article>
     </main>
+
+    <script>
+
+        function resizeScreen(){
+            if(window.innerWidth>=768){
+                menu.style.display = 'block'
+            }else{
+                menu.style.display = 'none'
+            }
+
+        }
+
+
+
+        function clickMenu(){
+            if(menu.style.display == 'block'){
+                    menu.style.display = 'none'
+            }else{
+                menu.style.display = 'block'
+            }
+
+        }
+    </script>
     
 </body>
 </html>
