@@ -6,6 +6,18 @@
     <title>Teste de Formulários</title>
     <link rel="stylesheet" href="styles/style.css">
 
+    <style>
+
+        input{
+            border-radius: 10px;
+            box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.179);
+            cursor: pointer;
+        }
+
+
+
+    </style>
+
 </head>
 <body>
 
@@ -18,7 +30,7 @@
 
             <p>
                 <label for="inome">Nome:</label>
-                <input type="text" name="Nome" id="inome" required>
+                <input type="text" name="Nome" id="inome" required placeholder="Nome Completo">
             </p>
 
             <p>
@@ -69,10 +81,7 @@
 
             <p>
                 <label for="local">Seu Estado: </label>
-                <select name="local" id="local">
-
-                    <option value="" selected>---Escolha---</option>
-                    
+                <select name="local" id="local">   
                     <optgroup label="Região Sudeste">
                          <option value="MG">Minas Gerais</option>
                          <option value="SP">São Paulo</option>
